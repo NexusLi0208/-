@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
+    <title>校长联席会议系统</title>
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <!--    <link rel="stylesheet" href="css/plugin.css">-->
+    <!--    <link rel="stylesheet" href="css/base.css">-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="top">
+            <div class="top-container">
+                <div class="logo">
+                    <a href="index.html"><img src="images/theme.png" alt=""></a>
+                </div>
+                <div class="top-btn">
+                    <button class="user-name dropdown-toggle" data-toggle="dropdown">张总<span><img src="images/dropdown_arrow.png"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><span><img src="images/personal_center/enrolling.png" alt=""></span><a href="my_sign_up.html">我的报名</a></li>
+                        <li><span><img src="images/personal_center/QR_code.png" alt=""></span><a href="#" data-toggle="modal" data-target="#code-modal">我的二维码</a></li>
+                        <li><span><img src="images/personal_center/settting.png" alt=""></span><a href="person_settings.html">设置</a></li>
+                        <li><span><img src="images/personal_center/sign_out.png" alt=""></span><a href="#" data-toggle="modal" data-target="#out-login">退出</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="meet_agenda.html">会议议程</a></li>
+                <li><a href="sign_up.html">会议报名</a></li>
+                <li><a href="meet-news-list.html">会议动态</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="#">换届选举</a></li>
+                        <li><a href="#">会议材料</a></li>
+                        <li><a href="#">会议服务</a></li>
+                    </ul>
+                </li>
+                <li><a href="meet_Guide.html">会议导读</a></li>
+                <li><a href="vote.html">案例投票</a></li>
+                <li><a href="sign_in.html">会议签到</a></li>
+                <li><a href="#">会议管理</a></li>
+                <li><a href="#">会议统计</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="mysignup-main">
+        <h1>我的报名</h1>
+        <!--startprint1-->
+        <div class="mysignup-body clearfix">
+            <div class="mysignup-left pull-left">
+                <div class="mysignup-left-title">
+                    <div class="meetname-box clearfix">
+                        <div class="mysignup-meet pull-left">
+                            <p class="meetname">"校企对接"分论坛</p>
+                            <p class="meettime"><span>2015-12-24</span>至<span>2015-12-24</span></p>
+                        </div>
+                        <div class="mysignup-meet borderl pull-left">
+                            <p class="meetname">"校企对接"分论坛</p>
+                            <p class="meettime"><span>2015-12-24</span>至<span>2015-12-24</span></p>
+                        </div>
+                        <div class="mysignup-meet borderl pull-left">
+                            <p class="meetname">"校企对接"分论坛</p>
+                            <p class="meettime"><span>2015-12-24</span>至<span>2015-12-24</span></p>
+                        </div>
+                        <div class="mysignup-meet borderl pull-right">
+                            <p class="meetname">"校企对接"分论坛</p>
+                            <p class="meettime"><span>2015-12-24</span>至<span>2015-12-24</span></p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="mysignup-left-contant">
+                    <!--                   <p><i><img src="images/application_clock.png" alt=""></i>会议开始时间：<span class="time">2015-12-24</span>会议结束时间：<span class="time">2016-06-08</span></p>-->
+                    <div class="mysignup-Info clearfix">
+                        <p>
+                            <i class="fa fa-user"></i>姓名：<span class=" text ">瞿二狗</span></p>
+                        <p><i class="fa  fa-venus-mars"></i>性别：<span class="text ">男</span></p>
+                        <p><i class="fa  fa-mortar-board"></i>院校：<span class="text ">上海市XX职业中学</span></p>
+                        <p><i class="fa fa-black-tie"></i>职务：<span class="text ">校级正职</span></p>
+                    </div>
+                    <p><i><img src="images/application_map.png " alt=" "></i>会议地址：<span class="text ">上海市宝山区长逸路复旦软件园188号</span></p>
+                    <p><i><img src="images/application_map.png " alt=" "></i>酒店地址：<span class="text ">上海市宝山区长逸路复旦软件园188号</span></p>
+
+                    <div class="mysignup-meet-bottom ">
+                        <button class="common-btn ">修改报名</button>
+                        <button class="cancel-btn ">取消报名</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mysignup-right pull-right ">
+                <div class="mysignup-right-code ">
+                    <div id="code-img"></div>
+                </div>
+                <p class="mycode-title ">我的二维码</p>
+                <p class="mycode-text ">提示：上方二维码可以用来签到也可以经过扫面让他人获取您的联系方式，请注意隐私安全，电脑上右键二维码另存为保存二维码</p>
+                <!--endprint1-->
+                <button class="print-btn" onclick=preview(1)>打印凭证</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="float-btn ">
+        <div class="phone-btn "></div>
+        <div class="phone-btn-hover ">
+            <p>咨询电话:<strong>13942147587</strong></p>
+        </div>
+        <!--
+        <div class="wechat-btn "></div>
+        <div class="wechat-pic animate fadeInLeft "><img src="images/code.png " alt=" ">
+            <p>关注微信公众号</p>
+        </div>
+        <div class="app-btn "></div>
+-->
+        <!-- <div class="app-pic animate fadeInLeft ">
+            <div class="apple_code ">
+                <img src="images/code.png " alt=" ">
+                <div class="icon ">
+                    <img src="images/Apple.png " alt=" ">
+                    <p>Iphone</p>
+                </div>
+            </div>
+            <div class="android_code ">
+                <img src="images/code.png " alt=" ">
+                <div class="icon ">
+                    <img src="images/Android.png " alt=" ">
+                    <p>android</p>
+                </div>
+            </div>
+        </div>
+-->
+        <div class=" ">
+            <a class="pop-a to-top " href="javascript: " e-for=" " e-fun="anchor "></a>
+        </div>
+    </div>
+
+    <footer class="footer ">
+        <p>Copright©2014 上海企想信息技术有限公司 All right reserved.沪ICP备05042289号-1</p>
+    </footer>
+    <script src="js/jquery.js "></script>
+    <script src="js/qrcode.min.js"></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/simba.website.js "></script>
+    <script src="js/common.js "></script>
+    <script>
+        var qrcode = new QRCode("code-img");
+        qrcode.makeCode("elText.value");
+    </script>
+</body>
+
+</html>

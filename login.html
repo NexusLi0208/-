@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
+    <title>校长联席会议系统</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <!--    <link rel="stylesheet" href="css/plugin.css">-->
+    <!--    <link rel="stylesheet" href="css/base.css">-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/skins/all.css">
+    <link href="css/all.css?v=1.0.2" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <div class="top">
+            <div class="top-container">
+                <div class="logo">
+                    <a href="index.html"><img src="images/theme.png" alt=""></a>
+                </div>
+                <div class="top-btn">
+                    <button class="user-name dropdown-toggle" data-toggle="dropdown">张总<span><img src="images/dropdown_arrow.png"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><span><img src="images/personal_center/enrolling.png" alt=""></span><a href="my_sign_up.html">我的报名</a></li>
+                        <li><span><img src="images/personal_center/QR_code.png" alt=""></span><a href="#" data-toggle="modal" data-target="#code-modal">我的二维码</a></li>
+                        <li><span><img src="images/personal_center/settting.png" alt=""></span><a href="person_settings.html">设置</a></li>
+                        <li><span><img src="images/personal_center/sign_out.png" alt=""></span><a href="#" data-toggle="modal" data-target="#out-login">退出</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="meet_agenda.html">会议议程</a></li>
+                <li><a href="sign_up.html">会议报名</a></li>
+                <li><a href="meet-news-list.html">会议动态</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="#">换届选举</a></li>
+                        <li><a href="#">会议材料</a></li>
+                        <li><a href="#">会议服务</a></li>
+                    </ul>
+                </li>
+                <li><a href="meet_Guide.html">会议导读</a></li>
+                <li><a href="vote.html">案例投票</a></li>
+                <li><a href="sign_in.html">会议签到</a></li>
+                <li><a href="#">会议管理</a></li>
+                <li><a href="#">会议统计</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-container">
+        <div class="login-main">
+            <h1>校长联席会议登录系统</h1>
+            <form action="index.html" id="login-form" class="">
+                <div class="login-form-row">
+                    <div class="input-text">
+                        <i class="form-text-icon"><img src="images/login/phone.png" alt=""></i>
+                        <input type="text" class="login-input" id="" placeholder="请输入您的手机号">
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!--                验证码-->
+                <!--
+                <div class="login-form-row">
+                    <div class="input-text">
+
+                        <input type="text" class="login-input verify" id="" placeholder="请输入收到的手机验证码">
+                        <button class="verify_code_btn">获取验证码</button>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+-->
+                <div class="login-form-row">
+                    <div class="input-text">
+                        <i class="form-text-icon"><img src="images/login/password.png" alt=""></i>
+                        <input type="passworld" class="login-input" id="" placeholder="请输入密码">
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="login-form-row">
+                    <div class="input-text">
+                        <p class="remember">
+                            <input type="checkbox"><span>记住密码</span></p>
+                        <p class="forget"><a href="find_password.html">忘记密码？</a></p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="login-form-row">
+                    <div class="input-text">
+                        <input type="submit" id="login-btn" value="登录">
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="float-btn">
+        <div class="phone-btn"></div>
+        <div class="phone-btn-hover">
+            <p>咨询电话:<strong>13942147587</strong></p>
+        </div>
+        <!--
+        <div class="wechat-btn"></div>
+        <div class="wechat-pic animate fadeInLeft"><img src="images/code.png" alt="">
+            <p>关注微信公众号</p>
+        </div>
+        <div class="app-btn"></div>
+-->
+        <!-- <div class="app-pic animate fadeInLeft">
+            <div class="apple_code">
+                <img src="images/code.png" alt="">
+                <div class="icon">
+                    <img src="images/Apple.png" alt="">
+                    <p>Iphone</p>
+                </div>
+            </div>
+            <div class="android_code">
+                <img src="images/code.png" alt="">
+                <div class="icon">
+                    <img src="images/Android.png" alt="">
+                    <p>android</p>
+                </div>
+            </div>
+        </div>
+-->
+        <div class="">
+            <a class="pop-a to-top" href="javascript:" e-for="" e-fun="anchor"></a>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Copright©2014 上海企想信息技术有限公司 All right reserved.沪ICP备05042289号-1</p>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/icheck.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/simba.website.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

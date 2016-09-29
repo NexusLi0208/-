@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
+    <title>校长联席会议系统</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <!--    <link rel="stylesheet" href="css/plugin.css">-->
+    <!--    <link rel="stylesheet" href="css/base.css">-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="top">
+            <div class="top-container">
+                <div class="logo">
+                    <a href="index.html"><img src="images/theme.png" alt=""></a>
+                </div>
+                <div class="top-btn">
+                    <button class="user-name dropdown-toggle" data-toggle="dropdown">张总<span><img src="images/dropdown_arrow.png"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><span><img src="images/personal_center/enrolling.png" alt=""></span><a href="my_sign_up.html">我的报名</a></li>
+                        <li><span><img src="images/personal_center/QR_code.png" alt=""></span><a href="#" data-toggle="modal" data-target="#code-modal">我的二维码</a></li>
+                        <li><span><img src="images/personal_center/settting.png" alt=""></span><a href="person_settings.html">设置</a></li>
+                        <li><span><img src="images/personal_center/sign_out.png" alt=""></span><a href="#" data-toggle="modal" data-target="#out-login">退出</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="meet_agenda.html">会议议程</a></li>
+                <li><a href="sign_up.html" class="active">会议报名</a></li>
+                <li><a href="meet-news-list.html">会议动态</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="#">换届选举</a></li>
+                        <li><a href="#">会议材料</a></li>
+                        <li><a href="#">会议服务</a></li>
+                    </ul>
+                </li>
+                <li><a href="meet_Guide.html">会议导读</a></li>
+                <li><a href="vote.html">案例投票</a></li>
+                <li><a href="sign_in.html">会议签到</a></li>
+                <li><a href="#">会议管理</a></li>
+                <li><a href="#">会议统计</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--startprint1-->
+    <div class="main-container">
+        <div class="sign_up_succes clearfix">
+            <section class="signup_succes_left fadeInLeft animate">
+                <img src="images/success_hint.png" alt="">
+            </section>
+            <section class="signup_succes_right">
+                <h1><span><img src="images/success.png" alt=""></span>报名成功！</h1>
+                <p>您已签到，请准时参加<span class="meet_name">2016高职高专会议</span></p>
+                <p class="meet_time">会议时间：<span>2016年6月12日</span></p>
+                <p class="meet_address">会议地址：<span>复旦软件园10楼</span></p>
+            </section>
+
+            <div class="clearfix"></div>
+            <section class="signup_sucess_bottom">
+                <div class="success_code pull-left"><img src="images/success_code.png" alt=""></div>
+                <div class="sucess_tag pull-left">
+                    <p>提示：左侧的二维码也以用来签到</p>
+                    <p class=>也可以经过扫描让他人获取您的联系方式，请注意隐私安全</p>
+                    <p>请在电脑上右键二维码另存为或在手机上长按二维码保存</p>
+                </div>
+            </section>
+            <!--endprint1-->
+            <div class="signup_sucess_btn">
+                <button class="print-btn" onclick=preview(1)>打印凭证</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Copright©2014 上海企想信息技术有限公司 All right reserved.沪ICP备05042289号-1</p>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/simba.website.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

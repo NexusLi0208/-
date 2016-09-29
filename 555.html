@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.css">
+</head>
+<style>
+    .box {
+        width: 500px;
+        height: 300px;
+        border: 1px solid #eee;
+        margin: 20px auto;
+    }
+    
+    .qiu {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        background: #00a0e9;
+        margin-top: 50px;
+    }
+    
+    .bounceInLeft {
+        animation-name: bounceInLeft;
+        animation-delay: 1s;
+    }
+    
+    .animate {
+        /*            动画总时长*/
+        animation-duration: 2.5s;
+        /*            动画停止后状态*/
+        animation-fill-mode: both;
+        /*            显示*/
+        visibility: visible;
+        animation-iteration-count: infinite;
+        /*            animation-iteration-count:infinite;s*/
+    }
+    
+    @keyframes bounceInLeft {
+        0%,
+        60%,
+        75%,
+        90%,
+        100% {
+            /*时间曲线*/
+            transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+        0% {
+            opacity: 1;
+            transform: translate3d(0px, 0px, 0px);
+        }
+        50% {
+            opacity: 1;
+            transform: translate3d( 0px, 100px, 0px);
+        }
+        100% {
+            transform: 0px;
+        }
+    }
+</style>
+
+<body>
+    <div class="box">
+        <div class="qiu animate bounceInLeft"><i class="fa fa-user"></i></div>
+    </div>
+</body>
+
+</html>

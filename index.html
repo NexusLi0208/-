@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>校长联席会议系统</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <script src="https://cdn.bootcss.com/selectivizr/1.0.2/selectivizr-min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header id="header">
+        <div class="top">
+            <div class="top-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <a href="index.html"><img src="images/theme.png" alt=""></a>
+                    </a>
+                </div>
+                <div class="top-btn">
+                    <!--                    <button class="login-btn dropdown-toggle" data-toggle="dropdown" onclick="window.location.href='login.html'">登录</button>-->
+                    <button class="user-name dropdown-toggle" data-toggle="dropdown">张总<span><img src="images/dropdown_arrow.png"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><span><img src="images/personal_center/enrolling.png" alt=""></span><a href="my_sign_up.html">我的报名</a></li>
+                        <li><span><img src="images/personal_center/QR_code.png" alt=""></span><a href="javascript:;" data-toggle="modal" data-target="#code-modal">我的二维码</a></li>
+                        <li><span><img src="images/personal_center/settting.png" alt=""></span><a href="person_settings.html">设置</a></li>
+                        <li><span><img src="images/personal_center/sign_out.png" alt=""></span><a href="javascript:;" data-toggle="modal" data-target="#out-login">退出</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="active">首页</a></li>
+                <li><a href="meet_agenda.html">会议议程</a></li>
+                <li><a href="sign_up.html">会议报名</a></li>
+                <li><a href="meet-news-list.html">会议动态</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="#">换届选举</a></li>
+                        <li><a href="#">会议材料</a></li>
+                        <li><a href="#">会议服务</a></li>
+                    </ul>
+                </li>
+                <li><a href="meet_Guide.html">会议导读</a></li>
+                <li><a href="vote_list.html">案例详情</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="vote_list.html">查看案例</a></li>
+                        <li><a href="vote.html">案例投票</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">会议管理</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="sign_in.html">会议签到</a></li>
+                        <li><a href="meet-charts.html">会议统计</a></li>
+                    </ul>
+                </li>
+                <li><a href="vote.html">会议资料</a></li>
+                <li><a href="vote.html">服务指南</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="go_hotel.html">去酒店</a></li>
+                        <li><a href="go_meeting.html">去会场</a></li>
+                        <li><a href="#">其他信息</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div class="content">
+            <!--html处理-->
+            <div class="fullSlide">
+                <div class="bd">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/1.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/2.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hd">
+                    <ul></ul>
+                </div>
+                <span class="prev"></span>
+                <span class="next"></span>
+            </div>
+        </div>
+    </section>
+    <div class="meet_dynamic">
+        <h1 class="meet_dynamic-title">会议动态</h1>
+        <section class="dynamic-list">
+            <ul>
+                <li><a href="meet_Guide.html">中国高职高专教育网郑重声明按时阿斯顿啊是打算打的风格的风格算</a>
+                    <time>2015-12-24</time>
+                </li>
+                <li><a href="meet_Guide.html">中国高职高专教育网郑重声明</a>
+                    <time>2015-12-24</time>
+                </li>
+                <li><a href="meet_Guide.html">中国高职高专教育网郑重声明</a>
+                    <time>2015-12-24</time>
+                </li>
+                <li><a href="meet_Guide.html">中国高职高专教育网郑重声明</a>
+                    <time>2015-12-24</time>
+                </li>
+                <li><a href="meet_Guide.html">中国高职高专教育网郑重声明</a>
+                    <time>2015-12-24</time>
+                </li>
+                <li><a href="meet_Guide.html">中国高职高专教育网郑重声明</a>
+                    <time>2015-12-24</time>
+                </li>
+            </ul>
+        </section>
+
+    </div>
+    <div class="float-btn">
+        <div class="phone-btn"></div>
+        <div class="phone-btn-hover">
+            <p>咨询电话:<strong>13942147587</strong></p>
+        </div>
+        <div class="wechat-btn"></div>
+        <div class="wechat-pic animate fadeInLeft"><img src="images/code.png" alt="">
+            <p>关注微信公众号</p>
+        </div>
+        <div class="app-btn"></div>
+        <div class="app-pic animate fadeInLeft">
+
+            <div class="apple_code">
+                <img src="images/code.png" alt="">
+                <div class="icon">
+                    <img src="images/Apple.png" alt="">
+                    <p>Iphone</p>
+                </div>
+            </div>
+            <div class="android_code">
+                <img src="images/code.png" alt="">
+                <div class="icon">
+                    <img src="images/Android.png" alt="">
+                    <p>Android</p>
+                </div>
+            </div>
+        </div>
+        <!--  回到顶部-->
+        <div class="">
+            <a class="pop-a to-top" href="javascript:" e-for="" e-fun="anchor"></a>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="content">
+        </div>
+        <p>Copright©2014 上海企想信息技术有限公司 All right reserved.沪ICP备05042289号-1</p>
+    </footer>
+    <div class="modal fade" id="code-modal">
+        <div class="modal-dialog">
+            <div class="modal-content mycode">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal" aria-label="Close"><img src="images/close.png" alt=""></button>
+                    <h4>我的二维码</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="mycodeimg" id="mycodeimg"></div>
+                    <p class="mycode_message1">提示：上方的二维码可以用来签到
+                        <br/>也可以经过扫描让他人获取您的联系方式请注意安全</p>
+                    <p class="mycode_message2">请在电脑上右键二维码另存为或长按二维码保存</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/simba.website.js"></script>
+    <script src="js/common.js"></script>
+    <script type="text/javascript" src="js/superslide.2.1.js"></script>
+    <!--二维码-->
+    <script>
+        $(function () {
+            $.getScript("js/jquery.qrcode.min.js", function () {
+                jQuery('#mycodeimg').qrcode("aaa");
+            })
+        })
+    </script>
+    <script>
+    </script>
+</body>
+
+</html>

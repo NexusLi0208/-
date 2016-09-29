@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
+    <title>校长联席会议系统</title>
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <script src="https://cdn.bootcss.com/selectivizr/1.0.2/selectivizr-min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header id="header">
+        <div class="top">
+            <div class="top-container">
+                <div class="logo">
+                    <a href="index.html"><img src="images/theme.png" alt=""></a>
+                </div>
+                <div class="top-btn">
+                    <button class="user-name dropdown-toggle" data-toggle="dropdown">张总<span><img src="images/dropdown_arrow.png"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><span><img src="images/personal_center/enrolling.png" alt=""></span><a href="my_sign_up.html">我的报名</a></li>
+                        <li><span><img src="images/personal_center/QR_code.png" alt=""></span><a href="#" data-toggle="modal" data-target="#code-modal">我的二维码</a></li>
+                        <li><span><img src="images/personal_center/settting.png" alt=""></span><a href="person_settings.html">设置</a></li>
+                        <li><span><img src="images/personal_center/sign_out.png" alt=""></span><a href="#" data-toggle="modal" data-target="#out-login">退出</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="meet_agenda.html">会议议程</a></li>
+                <li><a href="sign_up.html">会议报名</a></li>
+                <li><a href="meet-news-list.html">会议动态</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="#">换届选举</a></li>
+                        <li><a href="#">会议材料</a></li>
+                        <li><a href="#">会议服务</a></li>
+                    </ul>
+                </li>
+                <li><a href="meet_Guide.html">会议导读</a></li>
+                <li><a href="vote.html" class="active">案例投票</a></li>
+                <li><a href="sign_in.html">会议签到</a></li>
+                <li><a href="#">会议管理</a></li>
+                <li><a href="#">会议统计</a></li>
+            </ul>
+        </nav>
+    </header>
+   <div class="main-container">
+        <div class="vote-main">
+            <hgroup class="vote-title">
+                <h1>案例投票</h1>
+            </hgroup>
+            <section class="vote-contant clearfix">
+                <aside class="vote-nav pull-left">
+                    <h1><i class="fa fa-reorder"></i>典型案例</h1>
+                    <ul class="vote-nav-list">
+                        <li><i class="fa fa-chevron-right"></i>中国制造2015</li>
+                        <li><i class="fa fa-chevron-right"></i>创新创业教育</li>
+                        <li><i class="fa fa-chevron-right"></i>现代学徒制培养</li>
+                        <li><i class="fa fa-chevron-right"></i>职业教育集团化办学</li>
+                        <li><i class="fa fa-chevron-right"></i>股份制、混合所有制办学探索</li>
+                        <li><i class="fa fa-chevron-right"></i>学校章程与制度建设</li>
+                        <li><i class="fa fa-chevron-right"></i>教育信息化建设</li>
+                        <li><i class="fa fa-chevron-right"></i>上海企想信息技术有限公司</li>
+                    </ul>
+                </aside>
+                <article class="vote-listBox pull-right">
+                    <h1 class="clearfix">
+                    <i class="fa fa-bars"></i>案例列表
+                    <div class="btn-box">
+                    <form action="">
+                     <input type="text" placeholder="请输入案例名或相关院校" class="vote-input"><button class="vote-search-btn"><i class="fa fa-search"></i></button>
+                     </form>
+                     </div>
+                    </h1>
+                    <section>
+                        <ul class="vote-list clearfix">
+                            <li><img src="images/000.jpg" alt="">
+                                <p class="case-name">厉害了我的哥</p>
+                            </li>
+                            <li><img src="images/001.jpg" alt="">
+                                <p class="case-name">承让了我的弟</p>
+                            </li>
+                            <li><img src="images/002.jpg" alt="">
+                                <p class="case-name">厉害了我的哥</p>
+                            </li>
+                            <li><img src="images/000.jpg" alt="">
+                                <p class="case-name">厉害了我的哥</p>
+                            </li>
+                            <li><img src="images/001.jpg" alt="">
+                                <p class="case-name">承让了我的弟</p>
+                            </li>
+                            <li><img src="images/002.jpg" alt="">
+                                <p class="case-name">厉害了我的哥</p>
+                            </li>
+                        </ul>
+                        <div class="vote-list-footer">
+                            <footer class="Paging">
+                                <button class="Paging-left pull-left">上一页</button>
+                                <button class="Paging-right pull-left">下一页</button>
+                                <div class="Paging_num pull-left">第&nbsp;
+                                    <input id="Paging_num" type="text" value="2">&nbsp;页</div>
+                                <button id="Paging-jump pull-left">跳转</button>
+                                <div class="all_num pull-left">总共<span>55</span>页</div>
+                            </footer>
+                        </div>
+                    </section>
+                </article>
+            </section>
+        </div>
+    </div>
+
+
+    <!--
+        <div class="wechat-btn"></div>
+        <div class="wechat-pic animate fadeInLeft"><img src="images/code.png" alt="">
+            <p>关注微信公众号</p>
+        </div>
+        <div class="app-btn"></div>
+-->
+    <!-- <div class="app-pic animate fadeInLeft">
+            <div class="apple_code">
+                <img src="images/code.png" alt="">
+                <div class="icon">
+                    <img src="images/Apple.png" alt="">
+                    <p>Iphone</p>
+                </div>
+            </div>
+            <div class="android_code">
+                <img src="images/code.png" alt="">
+                <div class="icon">
+                    <img src="images/Android.png" alt="">
+                    <p>android</p>
+                </div>
+            </div>
+        </div>
+-->
+
+    <footer class="footer">
+        <p>Copright©2014 上海企想信息技术有限公司 All right reserved.沪ICP备05042289号-1</p>
+    </footer>
+    <!--    打开案例查看大图-->
+    <!--
+<div class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content case-modal">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal" aria-label="Close"><img src="images/close.png" alt=""></button>
+                <h4>会议议程</h4>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <img src="images/000.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+
+    <div class="modal fade" id="case-modal">
+        <div class="modal-dialog case-modal-dialog">
+            <div class="modal-content case-modal">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">厉害了我的哥</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="images/002.jpg" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary">投票</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.modal -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/simba.website.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        $(".vote-list li").on("click", function () {
+            $("#case-modal").modal(open);
+        })
+    </script>
+
+</body>
+
+</html>
